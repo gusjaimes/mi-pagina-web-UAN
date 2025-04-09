@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodología de la Investigación</title>
+    <style>
+
+header {
+    background-image: url('watercolour.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 1rem;
+}
+
+header h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #005f73;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #0a9396;
+}
+
+button {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0a9396;
+}
+
+#fotografias-con-texto {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+#fotografias-con-texto img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+#fotografias-con-texto .texto-lateral {
+    flex: 1;
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-con-texto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: flex-start;
+}
+
+.video-con-texto video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.video-con-texto .texto-video {
+    flex: 1;
+    min-width: 280px;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+  /* Diseño responsivo para dispositivos móviles */
+  @media (max-width: 768px) {
+    header {
+      height: auto;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      font-size: 1.4rem;
+    }
+    header p {
+      font-size: 1rem;
+    }
+    #fotografias-con-texto, .video-con-texto {
+      flex-direction: column;
+      align-items: center;
+    }
+    #fotografias-con-texto .texto-lateral, .video-con-texto .texto-video {
+      max-width: 100%;
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul li a {
+      width: 90%;
+      text-align: center;
+    }
+    iframe {
+      height: 200px;
+    }
+  }
+</style>
+    <script>
+        function mostrarMensaje() {
+            alert("Gracias por completar la autoevaluación.");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQQJ5FU7aa3CWW1QN3akjmXKv9WdgCGoYtsw&s" alt="Logo UAN">
+        <h1>Metodología de la Investigación</h1>
+</header>
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#fotografias">Fotografías IA</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#ejemplos">Ejemplos</a></li>
+            <li><a href="#enlaces">Enlaces útiles</a></li>
+            <li><a href="#autoevaluacion">Autoevaluación</a></li>
+            <li><a href="#formulario">Formulario de contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="introduccion">
+            <section style="padding: 2rem;">
+                <img src="investigacion_banner.png" alt="Banner de metodología de la investigación" style="max-width: 100%; height: auto; border-radius: 12px; margin: 1rem 0;">
+                <h3 style="margin-top: 2rem;">🎥 Video explicativo</h3>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/hw84ZYCHbLo?si=1Vb-f_IuHwrelvPg" title="Video: Metodología de la Investigación - Explicación sencilla" frameborder="0" allowfullscreen></iframe>
+            </section>
+        </section>
+
+        <section id="fotografias">
+            <h2>Fotografías generadas con IA</h2>
+            <div id="fotografias-con-texto">
+                <img src="ChatGPT Image 8 abr 2025, 10_50_58.png" alt="Imagen generada con IA">
+                <div class="texto-lateral">
+                    <p>
+                    Bienvenido a nuestro espacio dedicado a la metodología de la investigación, donde exploramos los principios y técnicas fundamentales que guían la indagación científica. Aquí, entenderás cómo se estructuran las investigaciones, la importancia de formular preguntas claras, y los métodos más efectivos para recopilar y analizar datos. Nuestro objetivo es proporcionar recursos accesibles y valiosos que te ayuden a desarrollar tus habilidades investigativas, ya seas estudiante, profesional o investigador. Acompáñanos en este recorrido por el fascinante mundo de la investigación, donde el rigor y la curiosidad se unen para ampliar nuestro conocimiento.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ejemplos">
+            <h2>Ejemplos</h2>
+            <div class="video-con-texto">
+                <video controls>
+                    <source src="invideo-ai-1080 Científico antiguo reflexiona sobre la c 2025-04-08.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+                <div class="texto-video">
+                    <p><strong>Pregunta de Investigación:</strong> ¿Cómo se heredan los rasgos genéticos?<br>
+                    <strong>Científico:</strong> Gregor Mendel<br>
+                    <strong>Logros:</strong> Mendel, a través de sus experimentos con plantas de guisante, formuló las leyes de la herencia, sentando las bases de la genética moderna.</p>
+
+                    <p><strong>Pregunta de Investigación:</strong> ¿Cuál es la estructura del ADN?<br>
+                    <strong>Científicos:</strong> James Watson y Francis Crick<br>
+                    <strong>Logros:</strong> En 1953, Watson y Crick propusieron el modelo de doble hélice del ADN, revolucionando nuestra comprensión de la genética y la biología molecular.</p>
+
+                    <p><strong>Pregunta de Investigación:</strong> ¿Cómo afecta el tabaquismo a la salud humana?<br>
+                    <strong>Científico:</strong> Sir Richard Doll<br>
+                    <strong>Logros:</strong> Doll fue pionero en la investigación que demostró la relación entre el tabaquismo y el cáncer de pulmón, lo que llevó a campañas de salud pública y políticas de control del tabaco.</p>
+
+                    <p><strong>Pregunta de Investigación:</strong> ¿Cuál es el origen del universo?<br>
+                    <strong>Científico:</strong> Stephen Hawking<br>
+                    <strong>Logros:</strong> Hawking realizó importantes contribuciones a la cosmología y la física teórica, desarrollando teorías sobre los agujeros negros y el Big Bang, lo que ayudó a profundizar nuestra comprensión del universo.</p>
+
+                    <p><strong>Pregunta de Investigación:</strong> ¿Cómo se puede curar el VIH/SIDA?<br>
+                    <strong>Científicos:</strong> Françoise Barré-Sinoussi y Luc Montagnier<br>
+                    <strong>Logros:</strong> Estos investigadores identificaron el VIH como el causante del SIDA en 1983, lo que permitió el desarrollo de tratamientos antirretrovirales que han salvado millones de vidas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="enlaces">
+  <h2>Enlaces útiles</h2>
+  <ul>
+    <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
+    <li><a href="https://www.redalyc.org/" target="_blank">Redalyc</a></li>
+    <li><a href="https://dialnet.unirioja.es/" target="_blank">Dialnet</a></li>
+    <li><a href="http://webquestmitesis.blogspot.com/" target="_blank">Mi blog sobre metodología</a></li>
+  </ul>
+</section>
+
+        <section id="autoevaluacion">
+  <h2>Autoevaluación</h2>
+  <form onsubmit="mostrarMensaje(); return false;">
+    <p><strong>1. ¿Qué representa el modelo de doble hélice propuesto por Watson y Crick?</strong><br>
+      <input type="radio" name="q1"> La estructura del ARN<br>
+      <input type="radio" name="q1"> La estructura del ADN<br>
+      <input type="radio" name="q1"> El ciclo celular
+    </p>
+    <p><strong>2. ¿Quién es considerado el padre de la genética por sus experimentos con guisantes?</strong><br>
+      <input type="radio" name="q2"> Charles Darwin<br>
+      <input type="radio" name="q2"> Gregor Mendel<br>
+      <input type="radio" name="q2"> Louis Pasteur
+    </p>
+    <p><strong>3. ¿Qué enfermedad ayudó a entender mejor Sir Richard Doll con sus investigaciones?</strong><br>
+      <input type="radio" name="q3"> Gripe<br>
+      <input type="radio" name="q3"> Cáncer de pulmón<br>
+      <input type="radio" name="q3"> Malaria
+    </p>
+    <button type="submit">Enviar respuestas</button>
+  </form>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulario de contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
